@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
 <html>
  
 <head>
-<meta charset="UTF-8">
+
 <title>Luke's Tourist Destinations</title>
  
 <!-- reference to Leaflet CSS -->
 <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
 <link rel="stylesheet" href="src/leaflet.css">
 <link rel="stylesheet" href="src/css/bootstrap.css">
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+
  
 <!-- reference to Leaflet JavaScript -->
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
@@ -18,7 +17,6 @@
 <script src="src/jquery-3.2.1.js"></script>
 <script src="src/plugins/leaflet-providers.js"></script>
 <script src="src/plugins/leaflet.ajax.min.js"></script>
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 <!-- set width and height styles for map -->
@@ -35,12 +33,15 @@
     color: #002b70
 
 </style>
-        </style>
-    </head>
-    <body>
-        <div id="side-bar" class="col-md-3"></div>
-        <div id="mapdiv" class="col-md-9"></div>
-        <script>
+
+</head>
+
+<body>
+
+    <!-- place holder for map -->
+    <div id="map"></div>
+
+<script>
 
     //  create map object, tell it to live in 'map' div and give initial latitude, longitude, zoom values 
     var map = L.map('map', {scrollWheelZoom:true}).setView([29.184810 , -0.849574], 2);
