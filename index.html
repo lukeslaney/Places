@@ -45,7 +45,7 @@
 <script>
 
     //  create map object, tell it to live in 'map' div and give initial latitude, longitude, zoom values 
-    var map = L.map('map', {scrollWheelZoom:true}).setView([29.184810 , -0.849574], 1);
+    var map = L.map('map', {scrollWheelZoom:true}).setView([29.184810 , -0.849574], 0.5);
 
     //  add base map tiles from OpenStreetMap and attribution info to 'map' div
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
